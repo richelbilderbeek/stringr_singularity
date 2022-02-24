@@ -37,9 +37,6 @@ jobs:
       - name: Show script
         run: cat scripts/demo_container.R
 
-      - name: Run container
-        run: singularity run stringr.sif scripts/demo_container.R
-
       - name: Run container with binding
         run: singularity run --bind $PWD/scripts/ stringr.sif scripts/demo_container.R
 

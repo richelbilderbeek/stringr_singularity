@@ -5,7 +5,7 @@ From: r-base
     sed -i 's/$/ universe/' /etc/apt/sources.list
     apt-get update
     apt-get clean
-    Rscript -e 'install.packages(c("stringi", "stringr"))'
+    Rscript -e 'install.packages("stringr")'
 
 %runscript
 echo "'stringr.sif' running with arguments '$@'"
