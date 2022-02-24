@@ -42,3 +42,9 @@ jobs:
       - name: Run container with binding
         run: singularity run --bind $PWD/scripts/ stringr.sif scripts/demo_container.R
 
+      - name: Upload the container
+        uses: actions/upload-artifact@v2
+        with:
+          name: stringr.sif
+          path: stringr.sif
+
