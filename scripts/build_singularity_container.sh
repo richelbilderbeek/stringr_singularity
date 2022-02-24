@@ -15,3 +15,4 @@ if [[ $HOSTNAME == "N141CU" ]]; then
   notify-send "Done creating 'stringr.sif'" "Done creating 'stringr.sif'"
 fi
 
+
