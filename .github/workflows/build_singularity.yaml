@@ -37,7 +37,7 @@ jobs:
         run: singularity run-help stringr.sif
 
       - name: Show run script
-        run: cat scripts/run_container.R
+        run: cat scripts/run_container.sh
 
       - name: Show R script
         run: cat scripts/demo_container.R
