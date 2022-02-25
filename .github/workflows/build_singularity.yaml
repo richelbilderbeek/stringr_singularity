@@ -36,11 +36,14 @@ jobs:
       - name: Show help of container
         run: singularity run-help stringr.sif
 
-      - name: Show script
+      - name: Show run script
+        run: cat scripts/run_container.R
+
+      - name: Show R script
         run: cat scripts/demo_container.R
 
       - name: Run container with binding
-        run: singularity run --bind $PWD/scripts/ stringr.sif scripts/demo_container.R
+        run: ./scripts/run_container.sh
 
       - name: Upload the container
         uses: actions/upload-artifact@v2
