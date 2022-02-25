@@ -5,6 +5,7 @@ From: r-base
     sed -i 's/$/ universe/' /etc/apt/sources.list
     apt-get update
     apt-get clean
+    echo "PATH: ${PATH}"
     Rscript -e 'install.packages("stringr")'
 
 %runscript
